@@ -32,26 +32,32 @@
 			"Price": 90,
 			"Description": "Starter Monkey",
 			"OnlyFromSpawn": true,
-			"Items": [{
-				"Amount": 1,
-				"Quality": 0,
-				"ForceBlueprint": false,
-				"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Recipes/PrimalItemConsumable_UnthinkableDelicacy.PrimalItemConsumable_UnthinkableDelicacy'"
-			}],
-			"Dinos": [{
-				"Level": 10,
-				"Blueprint": "Blueprint'/Game/Atlas/Creatures/Monkey/Monkey_Character_BP.Monkey_Character_BP'"
-			}]
+			"Items": [
+				{
+					"Amount": 1,
+					"Quality": 0,
+					"ForceBlueprint": false,
+					"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Recipes/PrimalItemConsumable_UnthinkableDelicacy.PrimalItemConsumable_UnthinkableDelicacy'"
+				}
+			],
+			"Dinos": [
+				{
+					"Level": 10,
+					"Blueprint": "Blueprint'/Game/Atlas/Creatures/Monkey/Monkey_Character_BP.Monkey_Character_BP'"
+				}
+			]
 		},
 		"vip": {
 			"DefaultAmount": 1,
 			"Description": "Vip kit for premiums (ptero)",
 			"Permissions": "Admins,Premiums",
-			"Dinos": [{
-				"Level": 20,
-				"Neutered": true,
-				"Blueprint": "Blueprint'/Game/PrimalEarth/Dinos/Ptero/Ptero_Character_BP.Ptero_Character_BP'"
-			}]
+			"Dinos": [
+				{
+					"Level": 20,
+					"Neutered": true,
+					"Blueprint": "Blueprint'/Game/PrimalEarth/Dinos/Ptero/Ptero_Character_BP.Ptero_Character_BP'"
+				}
+			]
 		},
 		"tools": {
 			"DefaultAmount": 3,
@@ -59,7 +65,8 @@
 			"MinLevel": 1,
 			"MaxLevel": 20,
 			"Description": "Starter Gear",
-			"Items": [{
+			"Items": [
+				{
 					"Amount": 1,
 					"Quality": 2,
 					"ForceBlueprint": false,
@@ -126,7 +133,8 @@
 		"Type": "item",
 		"Description": "Tools (Metal Hatchet, Metal Pick)",
 		"Price": 20,
-		"Items": [{
+		"Items": [
+			{
 				"Quality": 0,
 				"ForceBlueprint": false,
 				"Amount": 1,
@@ -144,7 +152,8 @@
 		"Type": "item",
 		"Description": "Fine Tools (Fine Metal Hatchet, Fine Metal Pick)",
 		"Price": 50,
-		"Items": [{
+		"Items": [
+			{
 				"Quality": 2,
 				"ForceBlueprint": false,
 				"Amount": 1,
@@ -162,7 +171,8 @@
 		"Type": "item",
 		"Description": "Fine Hide Armor Set",
 		"Price": 250,
-		"Items": [{
+		"Items": [
+			{
 				"Quality": 2,
 				"ForceBlueprint": false,
 				"Amount": 1,
@@ -198,155 +208,183 @@
 		"Type": "item",
 		"Description": "Turnip Seeds x5",
 		"Price": 30,
-		"Items": [{
-			"Quality": 0,
-			"ForceBlueprint": false,
-			"Amount": 5,
-			"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Consumables/PrimalItemConsumable_Vegetable_Turnip_Seed.PrimalItemConsumable_Vegetable_Turnip_Seed'"
-		}]
+		"Items": [
+			{
+				"Quality": 0,
+				"ForceBlueprint": false,
+				"Amount": 5,
+				"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Consumables/PrimalItemConsumable_Vegetable_Turnip_Seed.PrimalItemConsumable_Vegetable_Turnip_Seed'"
+			}
+		]
 	},
 	"Maize Seeds": {
 		"Type": "item",
 		"Description": "Maize Seeds x5",
 		"Price": 30,
-		"Items": [{
-			"Quality": 0,
-			"ForceBlueprint": false,
-			"Amount": 5,
-			"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Consumables/PrimalItemConsumable_Vegetable_Maize_Seed.PrimalItemConsumable_Vegetable_Maize_Seed'"
-		}]
+		"Items": [
+			{
+				"Quality": 0,
+				"ForceBlueprint": false,
+				"Amount": 5,
+				"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Consumables/PrimalItemConsumable_Vegetable_Maize_Seed.PrimalItemConsumable_Vegetable_Maize_Seed'"
+			}
+		]
 	},
 	"Wheat Seeds": {
 		"Type": "item",
 		"Description": "Wheat Seeds x5",
 		"Price": 30,
-		"Items": [{
-			"Quality": 0,
-			"ForceBlueprint": false,
-			"Amount": 5,
-			"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Consumables/PrimalItemConsumable_Vegetable_Wheat_Seed.PrimalItemConsumable_Vegetable_Wheat_Seed'"
-		}]
+		"Items": [
+			{
+				"Quality": 0,
+				"ForceBlueprint": false,
+				"Amount": 5,
+				"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Consumables/PrimalItemConsumable_Vegetable_Wheat_Seed.PrimalItemConsumable_Vegetable_Wheat_Seed'"
+			}
+		]
 	},
 	"Beet Seeds": {
 		"Type": "item",
 		"Description": "Beet Seeds x5",
 		"Price": 30,
-		"Items": [{
-			"Quality": 0,
-			"ForceBlueprint": false,
-			"Amount": 5,
-			"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Consumables/PrimalItemConsumable_Vegetable_Beet_Seed.PrimalItemConsumable_Vegetable_Beet_Seed'"
-		}]
+		"Items": [
+			{
+				"Quality": 0,
+				"ForceBlueprint": false,
+				"Amount": 5,
+				"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Consumables/PrimalItemConsumable_Vegetable_Beet_Seed.PrimalItemConsumable_Vegetable_Beet_Seed'"
+			}
+		]
 	},
 	"Beef Buns": {
 		"Type": "item",
 		"Description": "Jac's Beef Buns",
 		"Price": 50,
-		"Items": [{
-			"Quality": 0,
-			"ForceBlueprint": false,
-			"Amount": 5,
-			"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Recipes/PrimalItemConsumable_BeefBuns.PrimalItemConsumable_BeefBuns'"
-		}]
+		"Items": [
+			{
+				"Quality": 0,
+				"ForceBlueprint": false,
+				"Amount": 5,
+				"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Recipes/PrimalItemConsumable_BeefBuns.PrimalItemConsumable_BeefBuns'"
+			}
+		]
 	},
 	"Fish n Chips": {
 		"Type": "item",
 		"Description": "Lucy's Fish n Chips",
 		"Price": 50,
-		"Items": [{
-			"Quality": 0,
-			"ForceBlueprint": false,
-			"Amount": 5,
-			"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Recipes/PrimalItemConsumable_FishNChips.PrimalItemConsumable_FishNChips'"
-		}]
+		"Items": [
+			{
+				"Quality": 0,
+				"ForceBlueprint": false,
+				"Amount": 5,
+				"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Recipes/PrimalItemConsumable_FishNChips.PrimalItemConsumable_FishNChips'"
+			}
+		]
 	},
 	"Cooked Rosemary Chicken": {
 		"Type": "item",
 		"Description": "Alex's Rosemary Chicken",
 		"Price": 50,
-		"Items": [{
-			"Quality": 0,
-			"ForceBlueprint": false,
-			"Amount": 5,
-			"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Recipes/PrimalItemConsumable_RosemaryChicken.PrimalItemConsumable_RosemaryChicken'"
-		}]
+		"Items": [
+			{
+				"Quality": 0,
+				"ForceBlueprint": false,
+				"Amount": 5,
+				"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Recipes/PrimalItemConsumable_RosemaryChicken.PrimalItemConsumable_RosemaryChicken'"
+			}
+		]
 	},
 	"Pork Pot Pie": {
 		"Type": "item",
 		"Description": "Pork Pie",
 		"Price": 50,
-		"Items": [{
-			"Quality": 0,
-			"ForceBlueprint": false,
-			"Amount": 5,
-			"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Recipes/PrimalItemConsumable_PorkPie.PrimalItemConsumable_PorkPie'"
-		}]
+		"Items": [
+			{
+				"Quality": 0,
+				"ForceBlueprint": false,
+				"Amount": 5,
+				"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Recipes/PrimalItemConsumable_PorkPie.PrimalItemConsumable_PorkPie'"
+			}
+		]
 	},
 	"Baked Fish": {
 		"Type": "item",
 		"Description": "Steven's Stuffed & Baked Fish",
 		"Price": 50,
-		"Items": [{
-			"Quality": 0,
-			"ForceBlueprint": false,
-			"Amount": 5,
-			"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Recipes/PrimalItemConsumable_StuffedBakedFish.PrimalItemConsumable_StuffedBakedFish'"
-		}]
+		"Items": [
+			{
+				"Quality": 0,
+				"ForceBlueprint": false,
+				"Amount": 5,
+				"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Recipes/PrimalItemConsumable_StuffedBakedFish.PrimalItemConsumable_StuffedBakedFish'"
+			}
+		]
 	},
 	"Fine Small Plank": {
 		"Type": "item",
 		"Description": "Fine Small Wood Plank",
 		"Price": 20,
-		"Items": [{
-			"Quality": 2,
-			"ForceBlueprint": false,
-			"Amount": 1,
-			"Blueprint": "Blueprint'/Game/Atlas/Structures/ShipPlanks/Wood/Small/PrimalItemShip_Plank_Wood_Small.PrimalItemShip_Plank_Wood_Small'"
-		}]
+		"Items": [
+			{
+				"Quality": 2,
+				"ForceBlueprint": false,
+				"Amount": 1,
+				"Blueprint": "Blueprint'/Game/Atlas/Structures/ShipPlanks/Wood/Small/PrimalItemShip_Plank_Wood_Small.PrimalItemShip_Plank_Wood_Small'"
+			}
+		]
 	},
 	"Fine Medium Plank": {
 		"Type": "item",
 		"Description": "Fine Medium Wood Plank",
 		"Price": 40,
-		"Items": [{
-			"Quality": 2,
-			"ForceBlueprint": false,
-			"Amount": 1,
-			"Blueprint": "Blueprint'/Game/Atlas/Structures/ShipPlanks/Wood/Medium/PrimalItemShip_Plank_Wood_Medium.PrimalItemShip_Plank_Wood_Medium'"
-		}]
+		"Items": [
+			{
+				"Quality": 2,
+				"ForceBlueprint": false,
+				"Amount": 1,
+				"Blueprint": "Blueprint'/Game/Atlas/Structures/ShipPlanks/Wood/Medium/PrimalItemShip_Plank_Wood_Medium.PrimalItemShip_Plank_Wood_Medium'"
+			}
+		]
 	},
 	"Fine Medium Gunport": {
 		"Type": "item",
 		"Description": "Fine Medium Wood Gunport",
 		"Price": 40,
-		"Items": [{
-			"Quality": 2,
-			"ForceBlueprint": false,
-			"Amount": 1,
-			"Blueprint": "Blueprint'/Game/Atlas/Structures/ShipPlanks/Wood/Medium/PrimalItemShip_Gunport_Wood_Medium.PrimalItemShip_Gunport_Wood_Medium'"
-		}]
+		"Items": [
+			{
+				"Quality": 2,
+				"ForceBlueprint": false,
+				"Amount": 1,
+				"Blueprint": "Blueprint'/Game/Atlas/Structures/ShipPlanks/Wood/Medium/PrimalItemShip_Gunport_Wood_Medium.PrimalItemShip_Gunport_Wood_Medium'"
+			}
+		]
 	},
 	"Fine Large Plank": {
 		"Type": "item",
 		"Description": "Fine Large Wood Plank",
 		"Price": 60,
-		"Items": [{
-			"Quality": 2,
-			"ForceBlueprint": false,
-			"Amount": 1,
-			"Blueprint": "Blueprint'/Game/Atlas/Structures/ShipPlanks/Wood/Large/PrimalItemShip_Plank_Wood_Large.PrimalItemShip_Plank_Wood_Large'"
-		}]
+		"Items": [
+			{
+				"Quality": 2,
+				"ForceBlueprint": false,
+				"Amount": 1,
+				"Blueprint": "Blueprint'/Game/Atlas/Structures/ShipPlanks/Wood/Large/PrimalItemShip_Plank_Wood_Large.PrimalItemShip_Plank_Wood_Large'"
+			}
+		]
 	},
 	"Fine Large Gunport": {
 		"Type": "item",
 		"Description": "Fine Large Wood Gunport",
 		"Price": 60,
-		"Items": [{
-			"Quality": 2,
-			"ForceBlueprint": false,
-			"Amount": 1,
-			"Blueprint": "Blueprint'/Game/Atlas/Structures/ShipPlanks/Wood/Large/PrimalItemShip_Gunport_Wood_Large.PrimalItemShip_Gunport_Wood_Large'"
-		}]
+		"Items": [
+			{
+				"Quality": 2,
+				"ForceBlueprint": false,
+				"Amount": 1,
+				"Blueprint": "Blueprint'/Game/Atlas/Structures/ShipPlanks/Wood/Large/PrimalItemShip_Gunport_Wood_Large.PrimalItemShip_Gunport_Wood_Large'"
+			}
+		]
 	},
 	"Galleon": {
 		"Type": "ship",
