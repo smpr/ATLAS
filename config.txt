@@ -1,0 +1,412 @@
+{
+	"Mysql": {
+		"UseMysql": true,
+		"MysqlHost": "localhost",
+		"MysqlUser": "apitest",
+		"MysqlPass": "12345",
+		"MysqlDB": "shopdb"
+	},
+	"General": {
+		"TimedPointsReward": {
+			"Enabled": true,
+			"Interval": 5,
+			"Groups": {
+				"Default": {
+					"Amount": 5
+				},
+				"Premiums": {
+					"Amount": 15
+				}
+			}
+		},
+		"ItemsPerPage": 15,
+		"ShopDisplayTime": 15.0,
+		"ShopTextSize": 1.3,
+		"DbPathOverride": "",
+		"WebKey": "",
+		"DefaultKit": "vip,starter"
+	},
+	"Kits": {
+		"starter": {
+			"DefaultAmount": 2,
+			"Price": 90,
+			"Description": "Starter Monkey",
+			"OnlyFromSpawn": true,
+			"Items": [{
+				"Amount": 1,
+				"Quality": 0,
+				"ForceBlueprint": false,
+				"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Recipes/PrimalItemConsumable_UnthinkableDelicacy.PrimalItemConsumable_UnthinkableDelicacy'"
+			}],
+			"Dinos": [{
+				"Level": 10,
+				"Blueprint": "Blueprint'/Game/Atlas/Creatures/Monkey/Monkey_Character_BP.Monkey_Character_BP'"
+			}]
+		},
+		"vip": {
+			"DefaultAmount": 1,
+			"Description": "Vip kit for premiums (ptero)",
+			"Permissions": "Admins,Premiums",
+			"Dinos": [{
+				"Level": 20,
+				"Neutered": true,
+				"Blueprint": "Blueprint'/Game/PrimalEarth/Dinos/Ptero/Ptero_Character_BP.Ptero_Character_BP'"
+			}]
+		},
+		"tools": {
+			"DefaultAmount": 3,
+			"Price": 15,
+			"MinLevel": 1,
+			"MaxLevel": 20,
+			"Description": "Starter Gear",
+			"Items": [{
+					"Amount": 1,
+					"Quality": 2,
+					"ForceBlueprint": false,
+					"Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/Cloth/PrimalItemArmor_ClothBoots.PrimalItemArmor_ClothBoots'"
+				},
+				{
+					"Amount": 1,
+					"Quality": 2,
+					"ForceBlueprint": false,
+					"Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/Cloth/PrimalItemArmor_ClothGloves.PrimalItemArmor_ClothGloves'"
+				},
+				{
+					"Amount": 1,
+					"Quality": 2,
+					"ForceBlueprint": false,
+					"Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/Cloth/PrimalItemArmor_ClothHelmet.PrimalItemArmor_ClothHelmet'"
+				},
+				{
+					"Amount": 1,
+					"Quality": 2,
+					"ForceBlueprint": false,
+					"Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/Cloth/PrimalItemArmor_ClothPants.PrimalItemArmor_ClothPants'"
+				},
+				{
+					"Amount": 1,
+					"Quality": 2,
+					"ForceBlueprint": false,
+					"Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/Cloth/PrimalItemArmor_ClothShirt.PrimalItemArmor_ClothShirt'"
+				},
+				{
+					"Amount": 1,
+					"Quality": 0,
+					"ForceBlueprint": false,
+					"Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponStoneHatchet.PrimalItem_WeaponStoneHatchet'"
+				},
+				{
+					"Amount": 1,
+					"Quality": 0,
+					"ForceBlueprint": false,
+					"Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponStonePick.PrimalItem_WeaponStonePick'"
+				},
+				{
+					"Amount": 20,
+					"Quality": 0,
+					"ForceBlueprint": false,
+					"Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItemAmmo_ArrowStone.PrimalItemAmmo_ArrowStone'"
+				},
+				{
+					"Amount": 1,
+					"Quality": 0,
+					"ForceBlueprint": false,
+					"Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponBow.PrimalItem_WeaponBow'"
+				},
+				{
+					"Amount": 5,
+					"Quality": 0,
+					"ForceBlueprint": false,
+					"Blueprint": "Blueprint'/Game/Atlas/Weapons/Spear/PrimalItem_WeaponYarkSpear.PrimalItem_WeaponYarkSpear'"
+				}
+			]
+		}
+	},
+	"ShopItems": {
+		"Type": "item",
+		"Description": "Tools (Metal Hatchet, Metal Pick)",
+		"Price": 20,
+		"Items": [{
+				"Quality": 0,
+				"ForceBlueprint": false,
+				"Amount": 1,
+				"Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponMetalHatchet.PrimalItem_WeaponMetalHatchet'"
+			},
+			{
+				"Quality": 0,
+				"ForceBlueprint": false,
+				"Amount": 1,
+				"Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponMetalPick.PrimalItem_WeaponMetalPick'"
+			}
+		]
+	},
+	"tools": {
+		"Type": "item",
+		"Description": "Fine Tools (Fine Metal Hatchet, Fine Metal Pick)",
+		"Price": 50,
+		"Items": [{
+				"Quality": 2,
+				"ForceBlueprint": false,
+				"Amount": 1,
+				"Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponMetalHatchet.PrimalItem_WeaponMetalHatchet'"
+			},
+			{
+				"Quality": 2,
+				"ForceBlueprint": false,
+				"Amount": 1,
+				"Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Weapons/PrimalItem_WeaponMetalPick.PrimalItem_WeaponMetalPick'"
+			}
+		]
+	},
+	"Fine Armor": {
+		"Type": "item",
+		"Description": "Fine Hide Armor Set",
+		"Price": 250,
+		"Items": [{
+				"Quality": 2,
+				"ForceBlueprint": false,
+				"Amount": 1,
+				"Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/Leather/PrimalItemArmor_HideBoots.PrimalItemArmor_HideBoots'"
+			},
+			{
+				"Quality": 2,
+				"ForceBlueprint": false,
+				"Amount": 1,
+				"Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/Leather/PrimalItemArmor_HideGloves.PrimalItemArmor_HideGloves'"
+			},
+			{
+				"Quality": 2,
+				"ForceBlueprint": false,
+				"Amount": 1,
+				"Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/Leather/PrimalItemArmor_HideHelmet.PrimalItemArmor_HideHelmet'"
+			},
+			{
+				"Quality": 2,
+				"ForceBlueprint": false,
+				"Amount": 1,
+				"Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/Leather/PrimalItemArmor_HidePants.PrimalItemArmor_HidePants'"
+			},
+			{
+				"Quality": 2,
+				"ForceBlueprint": false,
+				"Amount": 1,
+				"Blueprint": "Blueprint'/Game/PrimalEarth/CoreBlueprints/Items/Armor/Leather/PrimalItemArmor_HideShirt.PrimalItemArmor_HideShirt'"
+			}
+		]
+	},
+	"Turnip Seeds": {
+		"Type": "item",
+		"Description": "Turnip Seeds x5",
+		"Price": 30,
+		"Items": [{
+			"Quality": 0,
+			"ForceBlueprint": false,
+			"Amount": 5,
+			"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Consumables/PrimalItemConsumable_Vegetable_Turnip_Seed.PrimalItemConsumable_Vegetable_Turnip_Seed'"
+		}]
+	},
+	"Maize Seeds": {
+		"Type": "item",
+		"Description": "Maize Seeds x5",
+		"Price": 30,
+		"Items": [{
+			"Quality": 0,
+			"ForceBlueprint": false,
+			"Amount": 5,
+			"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Consumables/PrimalItemConsumable_Vegetable_Maize_Seed.PrimalItemConsumable_Vegetable_Maize_Seed'"
+		}]
+	},
+	"Wheat Seeds": {
+		"Type": "item",
+		"Description": "Wheat Seeds x5",
+		"Price": 30,
+		"Items": [{
+			"Quality": 0,
+			"ForceBlueprint": false,
+			"Amount": 5,
+			"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Consumables/PrimalItemConsumable_Vegetable_Wheat_Seed.PrimalItemConsumable_Vegetable_Wheat_Seed'"
+		}]
+	},
+	"Beet Seeds": {
+		"Type": "item",
+		"Description": "Beet Seeds x5",
+		"Price": 30,
+		"Items": [{
+			"Quality": 0,
+			"ForceBlueprint": false,
+			"Amount": 5,
+			"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Consumables/PrimalItemConsumable_Vegetable_Beet_Seed.PrimalItemConsumable_Vegetable_Beet_Seed'"
+		}]
+	},
+	"Beef Buns": {
+		"Type": "item",
+		"Description": "Jac's Beef Buns",
+		"Price": 50,
+		"Items": [{
+			"Quality": 0,
+			"ForceBlueprint": false,
+			"Amount": 5,
+			"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Recipes/PrimalItemConsumable_BeefBuns.PrimalItemConsumable_BeefBuns'"
+		}]
+	},
+	"Fish n Chips": {
+		"Type": "item",
+		"Description": "Lucy's Fish n Chips",
+		"Price": 50,
+		"Items": [{
+			"Quality": 0,
+			"ForceBlueprint": false,
+			"Amount": 5,
+			"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Recipes/PrimalItemConsumable_FishNChips.PrimalItemConsumable_FishNChips'"
+		}]
+	},
+	"Cooked Rosemary Chicken": {
+		"Type": "item",
+		"Description": "Alex's Rosemary Chicken",
+		"Price": 50,
+		"Items": [{
+			"Quality": 0,
+			"ForceBlueprint": false,
+			"Amount": 5,
+			"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Recipes/PrimalItemConsumable_RosemaryChicken.PrimalItemConsumable_RosemaryChicken'"
+		}]
+	},
+	"Pork Pot Pie": {
+		"Type": "item",
+		"Description": "Pork Pie",
+		"Price": 50,
+		"Items": [{
+			"Quality": 0,
+			"ForceBlueprint": false,
+			"Amount": 5,
+			"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Recipes/PrimalItemConsumable_PorkPie.PrimalItemConsumable_PorkPie'"
+		}]
+	},
+	"Baked Fish": {
+		"Type": "item",
+		"Description": "Steven's Stuffed & Baked Fish",
+		"Price": 50,
+		"Items": [{
+			"Quality": 0,
+			"ForceBlueprint": false,
+			"Amount": 5,
+			"Blueprint": "Blueprint'/Game/Atlas/AtlasCoreBP/Items/Recipes/PrimalItemConsumable_StuffedBakedFish.PrimalItemConsumable_StuffedBakedFish'"
+		}]
+	},
+	"Fine Small Plank": {
+		"Type": "item",
+		"Description": "Fine Small Wood Plank",
+		"Price": 20,
+		"Items": [{
+			"Quality": 2,
+			"ForceBlueprint": false,
+			"Amount": 1,
+			"Blueprint": "Blueprint'/Game/Atlas/Structures/ShipPlanks/Wood/Small/PrimalItemShip_Plank_Wood_Small.PrimalItemShip_Plank_Wood_Small'"
+		}]
+	},
+	"Fine Medium Plank": {
+		"Type": "item",
+		"Description": "Fine Medium Wood Plank",
+		"Price": 40,
+		"Items": [{
+			"Quality": 2,
+			"ForceBlueprint": false,
+			"Amount": 1,
+			"Blueprint": "Blueprint'/Game/Atlas/Structures/ShipPlanks/Wood/Medium/PrimalItemShip_Plank_Wood_Medium.PrimalItemShip_Plank_Wood_Medium'"
+		}]
+	},
+	"Fine Medium Gunport": {
+		"Type": "item",
+		"Description": "Fine Medium Wood Gunport",
+		"Price": 40,
+		"Items": [{
+			"Quality": 2,
+			"ForceBlueprint": false,
+			"Amount": 1,
+			"Blueprint": "Blueprint'/Game/Atlas/Structures/ShipPlanks/Wood/Medium/PrimalItemShip_Gunport_Wood_Medium.PrimalItemShip_Gunport_Wood_Medium'"
+		}]
+	},
+	"Fine Large Plank": {
+		"Type": "item",
+		"Description": "Fine Large Wood Plank",
+		"Price": 60,
+		"Items": [{
+			"Quality": 2,
+			"ForceBlueprint": false,
+			"Amount": 1,
+			"Blueprint": "Blueprint'/Game/Atlas/Structures/ShipPlanks/Wood/Large/PrimalItemShip_Plank_Wood_Large.PrimalItemShip_Plank_Wood_Large'"
+		}]
+	},
+	"Fine Large Gunport": {
+		"Type": "item",
+		"Description": "Fine Large Wood Gunport",
+		"Price": 60,
+		"Items": [{
+			"Quality": 2,
+			"ForceBlueprint": false,
+			"Amount": 1,
+			"Blueprint": "Blueprint'/Game/Atlas/Structures/ShipPlanks/Wood/Large/PrimalItemShip_Gunport_Wood_Large.PrimalItemShip_Gunport_Wood_Large'"
+		}]
+	},
+	"Galleon": {
+		"Type": "ship",
+		"Description": "Galleon",
+		"Price": 1000,
+		"BlueprintShip": "Blueprint'/Game/Atlas/Vehicles/Ships/Galleon/Ship_BP_Galleon.Ship_BP_Galleon'",
+		"BlueprintHull": "Blueprint'/Game/Atlas/Structures/ShipHulls/ShipHullGalleon_BP.ShipHullGalleon_BP'"
+	},
+	"Messages": {
+		"Sender": "AtlasShop",
+		"BoughtItem": "<RichColor Color=\"0, 1, 0, 1\">You have successfully bought item</>",
+		"BoughtDino": "<RichColor Color=\"0, 1, 0, 1\">You have successfully bought dino</>",
+		"BoughtBeacon": "<RichColor Color=\"0, 1, 0, 1\">You have successfully bought beacon</>",
+		"BoughtExp": "<RichColor Color=\"0, 1, 0, 1\">You have successfully bought experience</>",
+		"ReceivedPoints": "<RichColor Color=\"1, 1, 0, 1\">You have received {0} points! (total: {1})</>",
+		"HavePoints": "You have {0} points",
+		"NoPoints": "<RichColor Color=\"1, 0, 0, 1\">You don't have enough points</>",
+		"WrongId": "<RichColor Color=\"1, 0, 0, 1\">Wrong id</>",
+		"NoPermissionsKit": "<RichColor Color=\"1, 0, 0, 1\">You don't have permission to use this kit</>",
+		"CantBuyKit": "<RichColor Color=\"1, 0, 0, 1\">You can't buy this kit</>",
+		"BoughtKit": "<RichColor Color=\"0, 1, 0, 1\">You have successfully bought {0} kit</>",
+		"AvailableKits": "Available kits for you:",
+		"NoKits": "No available kits",
+		"KitsLeft": "You have {0} {1} kits left",
+		"NoKitsLeft": "You don't have {0} kits left",
+		"CantGivePoints": "<RichColor Color=\"1, 0, 0, 1\">You can't give points to yourself</>",
+		"RidingDino": "<RichColor Color=\"1, 0, 0, 1\">You can't buy this item while riding a dino</>",
+		"SentPoints": "<RichColor Color=\"0, 1, 0, 1\">You have successfully sent {0} points to {1}</>",
+		"GotPoints": "You have received {0} points from {1}",
+		"NoPlayer": "<RichColor Color=\"1, 0, 0, 1\">Player doesn't exist</>",
+		"FoundMorePlayers": "<RichColor Color=\"1, 0, 0, 1\">Found more than one player with the given name</>",
+		"BuyUsage": "Usage: /buy id amount",
+		"ShopUsage": "Usage: /shop page",
+		"KitUsage": "Usage: /kit KitName",
+		"BuyKitUsage": "Usage: /BuyKit KitName amount",
+		"TradeUsage": "Usage: /trade 'Player Name' amount",
+		"PointsCmd": "/points",
+		"TradeCmd": "/trade",
+		"BuyCmd": "/buy",
+		"ShopCmd": "/shop",
+		"KitCmd": "/kit",
+		"BuyKitCmd": "/buykit",
+		"SellCmd": "/sell",
+		"ShopSellCmd": "/shopsell",
+		"SellUsage": "Usage: /sell id amount",
+		"NotEnoughItems": "<RichColor Color=\"1, 0, 0, 1\">You don't have enough items ({0}/{1})</>",
+		"SoldItems": "<RichColor Color=\"0, 1, 0, 1\">You have successfully sold items</>",
+		"BadLevel": "<RichColor Color=\"1, 0, 0, 1\">Required level: {0} - {1}</>",
+		"KitsListPrice": "Price: {0}",
+		"KitsListFormat": "\"{0}\" - {1}. {2} left. {3}\n",
+		"StoreListDino": "{0}) {1}. Level: {2}. Id: {3}. Price: {4}\n",
+		"StoreListItem": "{0}) {1}. Id: {2}. Price: {3}\n",
+		"StoreListFormat": "{0}",
+		"OnlyOnSpawnKit": "This kit can be used only on spawn",
+		"HelpCmd": "/shophelp",
+		"ShopMessage": "Usage: /buy id amount",
+		"HelpMessage": "This is shop help message",
+		"ClaimCmd": "/claim",
+		"ClaimedItems": "You have successfully claimed the items",
+		"NothingToClaim": "You have nothing to claim",
+		"ReceivedFirstPoints": "{}"
+	}
+}
